@@ -35,7 +35,7 @@ public class Quiz1 {
         if (div < (2 * n)) {
             System.out.println(n + " is a deficient number");   //if the divisors are less than 2 times the number its deficient
         } else if (div > (2 * n)) {
-            System.out.println(n + " is a abundant number");    //if the divisors are more than 2 times the number its abundant;
+            System.out.println(n + " is an abundant number");    //if the divisors are more than 2 times the number its abundant;
         }
        }
 
