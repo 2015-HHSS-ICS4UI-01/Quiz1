@@ -17,43 +17,40 @@ public class Quiz1 {
      */
     public static void main(String[] args) {
         
-        Scanner s = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
         int input = -1;
         
         while (input != 0)
         {
             System.out.println("Enter in a number to classify");
-            input = s.nextInt();
-            if (input == 0) continue;
+            input = scanner.nextInt();
+            if (input == 0) continue; // stop the program when the input is 0
             System.out.println(input + " is " + integerType(input) + " number");
         }
         
     }
     
-    public static String integerType(int n)
+    public static String integerType(int num) // returns the answer (abundant, deficient, perfect... ) + (a) or (an)
     {
         
-        int sum = 0;
+        int sumOfFactors = 0;
         
-        for (int i = 1; i <= n; i ++)
+        for (int i = 1; i <= num; i ++) // adds all factors to the sum
         {
-            if (n % i == 0)
+            if (num % i == 0)
             {
-                sum += i;
+                sumOfFactors += i;
             }
         }
-        if (sum == n*2)
+        if (sumOfFactors == num*2)
         {
             return "a perfect";
         }
-        else if (sum > 2*n)
+        if (sumOfFactors > 2*num)
         {
             return "an abundant";
         }
-        else 
-        {
-            return "a deficient";
-        }
+        return "a deficient";
     }
 }
