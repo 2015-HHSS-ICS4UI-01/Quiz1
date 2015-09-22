@@ -39,7 +39,7 @@ public class Quiz1 {
                 //inform user of error, allow them to reenter their number
                 System.out.println("ERROR: Number must be a positive integer.");
             //if user number is greater than 0
-            }else{
+            }else if (num > 0){
                 //find the divisors for the user's number
                 for(int i = 1; i <= num; i++)
                 {
@@ -52,8 +52,8 @@ public class Quiz1 {
                     }   
                 }
                 
-                //if the sum of the numbers is not 0 and equal to user's number * 2
-                if(sum != 0 && sum == (num*2))
+                //if the sum of the numbers is equal to user's number * 2
+                if(sum == (num*2))
                 {
                     //inform user their number is perfect
                     System.out.println(num + " is a perfect number.");
