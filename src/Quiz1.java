@@ -18,17 +18,18 @@ public class Quiz1 {
         // TODO code application logic here
 
         Scanner input = new Scanner(System.in);
-        while (true) {
-            System.out.print("Enter in number to classify: ");
-            int n = input.nextInt();
-            int nd = n * 2;
-            int divisors = 0;
+        
+        while (true) { // starts a loop 
+            System.out.print("Enter in number to classify: "); //asks for a number
+            int n = input.nextInt();//enters a number
+            int nd = n * 2; //doubles the number waht was input so it can be used later 
+            int divisors = 0; //int for storing divisors
 
             if (n == 0) {
                 break;
             }
 
-
+            //starts at 1 and gets the mod of the number to determine if it is a factor and adds it if it is a factor
             for (int i = 1; i <= n; i++) {
 
                 if (n % i == 0) {
@@ -38,7 +39,7 @@ public class Quiz1 {
                 }
             }
 
-            if (divisors == nd) {
+            if (divisors == nd) { 
                 System.out.println(n + " is a perfect number");
             } else if (divisors > nd) {
                 System.out.println(n + " is an abundant number");
