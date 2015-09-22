@@ -37,7 +37,7 @@ public class Quiz {
                 }
             }
             
-                    if (total == number*2)
+                    if (total == number*2 && number !=0)
                     {
                         System.out.println(number + " is a perfect number");
                     }
