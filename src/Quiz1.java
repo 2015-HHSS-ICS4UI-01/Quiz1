@@ -20,7 +20,9 @@ public class Quiz1 {
        while(true){                                             //loop to run constantly 
         System.out.println("Enter in a number to classify");    //output asking for input
         int n = scan.nextInt();                                 //n = user input
-
+        if(n == 0){                                             //to end loop
+            break;
+        }
         int div = 0;                                            //variable for divisors
 
         for (int i = n; i > 0; i--) {                           //for loop for adding the even divisiors of the number
