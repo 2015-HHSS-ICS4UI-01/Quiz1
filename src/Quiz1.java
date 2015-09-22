@@ -22,7 +22,6 @@ public class Quiz1
         int input;
         int output=0;
         int divisor=0;
-        double remain=0d;
         while(state==0)
         {
             System.out.println("Enter in a number to classify");
