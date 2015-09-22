@@ -21,7 +21,7 @@ public class Quiz1 {
         while(true)
         {
             //ask the user to input a number
-        System.out.println("Input a number to classify");
+        System.out.println("Enter a number to classify");
         int n = input.nextInt();
         
         //declare variables
