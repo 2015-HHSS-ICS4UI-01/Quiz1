@@ -12,7 +12,7 @@ import becker.robots.Wall;
  */
 
 /**
- *
+ * 
  * @author alled7036
  */
 public class Quiz1 {
@@ -45,6 +45,7 @@ public class Quiz1 {
         new Thing(kw, 2, 3);
         new Thing(kw, 1, 4);
         
+        //Move Karel
         karel.move();
         karel.pickThing();
         karel.turnLeft();
